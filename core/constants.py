@@ -37,6 +37,7 @@ temas_enem = {
     2021: "Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil",
     2022: "Desafios para a valorização de comunidades e povos tradicionais no Brasil",
     2023: "Desafios do envelhecimento populacional no Brasil",
+    2024: "Desafios para a valorização da herança africana no Brasil",
 }
 
 # esses termos são inapropriados para temas de redação
