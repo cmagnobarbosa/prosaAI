@@ -7,8 +7,10 @@ import logging
 
 from sentence_transformers import SentenceTransformer, util
 
-from core.constants import (GUARDRAIL_MSG, MODEL2, PROVIDER, PROVIDER_API_KEY, SIM_THRESHOLD,
-                            termos_inapropriados)
+from core.constants import (GUARDRAIL_MSG, SIM_THRESHOLD, termos_inapropriados)
+
+from core.constants import (PROVIDER1, PROVIDER1_API_KEY, MODEL1)
+
 from core.preprocessamento import remover_acentos
 from core.servico_llm import make_llm_call
 
@@ -100,7 +102,7 @@ def checar_tema_enem_por_llm(tema):
     # Usa um modelo mais poderoso para validar o tema
     # Escala de modelos: gpt-4o-mini < gpt-4o
     logger.info("Validando tema com modelo mais poderoso...")
-    response = make_llm_call(PROVIDER, MODEL2, contexto, prompt, PROVIDER_API_KEY)
+    response = make_llm_call(PROVIDER1, MODEL1, contexto, prompt, PROVIDER1_API_KEY)
     response = json.loads(response)
     if "sim" in response['resposta']:
         return True
