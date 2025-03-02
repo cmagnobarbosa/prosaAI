@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8ec391e9955d414da25de6d20b70b878)](https://app.codacy.com/gh/cmagnobarbosa/prosaAI?utm_source=github.com&utm_medium=referral&utm_content=cmagnobarbosa/prosaAI&utm_campaign=Badge_Grade)
 [![Pylint](https://github.com/cmagnobarbosa/prosaAI/actions/workflows/pylint.yml/badge.svg?branch=main)](https://github.com/cmagnobarbosa/prosaAI/actions/workflows/pylint.yml)
 # ProsaAI
 
