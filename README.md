@@ -1,4 +1,5 @@
 [![Pylint](https://github.com/cmagnobarbosa/prosaAI/actions/workflows/pylint.yml/badge.svg?branch=main)](https://github.com/cmagnobarbosa/prosaAI/actions/workflows/pylint.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b4ab63e63ae540c4b68e7640d16e3773)](https://app.codacy.com/gh/cmagnobarbosa/prosaAI/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 # ProsaAI
 
 ProsaAI é um gerador de temas de redações para o ENEM que utiliza inteligência artificial e notícias atuais em formato RSS para inspirar estudantes com temas relevantes e contemporâneos.
