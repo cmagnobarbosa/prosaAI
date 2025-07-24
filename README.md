@@ -6,6 +6,59 @@ ProsaAI é um gerador de temas de redações para o ENEM que utiliza inteligênc
 
 Você está pronto para a próxima Prosa?
 
+## 🔐 Autenticação
+
+A API utiliza autenticação JWT (JSON Web Tokens) para proteger os endpoints. 
+
+### Início Rápido
+
+1. **Configure a chave secreta**:
+   ```bash
+   export SECRET_KEY="sua-chave-secreta-forte"
+   ```
+
+2. **Faça login para obter token**:
+   ```bash
+   curl -X POST "http://localhost:8000/login" \
+        -H "Content-Type: application/x-www-form-urlencoded" \
+        -d "username=admin&password=admin123"
+   ```
+
+3. **Use o token para acessar endpoints protegidos**:
+   ```bash
+   curl -X GET "http://localhost:8000/gerar_tema" \
+        -H "Authorization: Bearer SEU_TOKEN_AQUI"
+   ```
+
+### Credenciais Padrão
+- **Username**: `admin`
+- **Password**: `admin123`
+
+📚 **Documentação completa**: [JWT Authentication Guide](docs/jwt-authentication.md)
+
+## 🚀 Instalação e Execução
+
+1. **Instale as dependências**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Configure variáveis de ambiente**:
+   ```bash
+   export SECRET_KEY="sua-chave-secreta-forte"
+   export PROVIDER1_API_KEY="sua-chave-openai"
+   # ... outras configurações opcionais
+   ```
+
+3. **Inicie o servidor**:
+   ```bash
+   uvicorn main:app --reload --host 0.0.0.0 --port 8000
+   ```
+
+4. **Acesse a documentação interativa**:
+   - Swagger UI: http://localhost:8000/docs
+   - ReDoc: http://localhost:8000/redoc
+
 ## Arquitetura
 
 Definição de fontes de noticias (RSS) -> Geração de Resumo de diversas fontes -> Geração de tema do dia -> Agente de Checagem de Tema -> disponibilização
