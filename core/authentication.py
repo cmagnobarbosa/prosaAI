@@ -4,8 +4,6 @@ import os
 
 from fastapi import Header, HTTPException
 
-API_TOKEN = os.getenv("UAI_API_TOKEN")
-
 
 # Função de dependência para verificação do token
 def verificar_token(authorization: str = Header(...)):
@@ -15,6 +13,7 @@ def verificar_token(authorization: str = Header(...)):
     Raises:
         HTTPException: Erro de autenticação.
     """
-    if authorization != f"Bearer {API_TOKEN}":
+    api_token = os.getenv("UAI_API_TOKEN")
+    if authorization != f"Bearer {api_token}":
         raise HTTPException(status_code=401, detail="Token de autorização inválido")
     return True
