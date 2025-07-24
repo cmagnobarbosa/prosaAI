@@ -1,6 +1,34 @@
 """
     Módulo de provedores de API de chatbots.
 """
+
+class Maritaca:
+    """
+        Maritaca.ai API - Portuguese language specialized model
+        https://www.maritaca.ai/
+    """
+    def __init__(self):
+        """
+            Inicializa a classe
+        """
+
+    @staticmethod
+    def placeholer():
+        """
+            Retorna o nome do provedor
+        """
+        return "maritaca"
+
+    @staticmethod
+    def modelos():
+        """
+            Retorna os modelos disponíveis para o provedor
+        """
+        # Based on Maritaca.ai's Sabiá models for Portuguese language
+        return ["sabia-2",
+                "sabia-2-small", 
+                "sabia-2-medium"]
+
 class Gemini:
     """
         Google Gemini API - https://ai.google.dev/gemini-api/docs
