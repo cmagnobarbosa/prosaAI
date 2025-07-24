@@ -5,6 +5,7 @@
     e tratar o retorno para retornar apenas o conteúdo da resposta.
 """
 import requests
+from core.chat_api.provedores import Maritaca
 from core.chat_api.provedores import Gemini
 from core.chat_api.provedores import OpenAI
 from core.chat_api.provedores import DeepSeek
@@ -23,6 +24,10 @@ provedores_suportados = {
     DeepSeek.placeholer(): {
         "modelos": DeepSeek.modelos(),
         "api_url": "https://api.deepseek.com/chat/completions"
+    },
+    Maritaca.placeholer(): {
+        "modelos": Maritaca.modelos(),
+        "api_url": "https://chat.maritaca.ai/api/chat/completions"
     }
 }
 
