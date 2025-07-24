@@ -1,17 +1,1 @@
-[
-   {
-      "website":"BBC - World",
-      "URL":"http://feeds.bbci.co.uk/news/world/rss.xml"
-   },
-   {
-      "website":"Agência Brasil",
-      "URL":"https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml"
-   },
-   {
-      "website":"Agência Brasil - Educação",
-      "URL":"https://agenciabrasil.ebc.com.br/rss/educacao/feed.xml"
-   },
-   {"website": "Agencia - Brasil - Internacional",
-   "URL":"https://agenciabrasil.ebc.com.br/rss/internacional/feed.xml"
-}
-]
+[{"URL": "https://example.com/rss"}]

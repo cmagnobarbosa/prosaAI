@@ -7,14 +7,14 @@ NUM_NOTICIAS = 3
 SIM_THRESHOLD = 0.7
 
 # Provedor mais poderoso
-PROVIDER1 = config("PROVIDER1")
-PROVIDER1_API_KEY = config("PROVIDER1_API_KEY")
-MODEL1 = config("MODEL1")
+PROVIDER1 = config("PROVIDER1", default="openai")
+PROVIDER1_API_KEY = config("PROVIDER1_API_KEY", default="test-key")
+MODEL1 = config("MODEL1", default="gpt-3.5-turbo")
 
 # Provedor menos poderoso
-PROVIDER2 = config("PROVIDER2")
-PROVIDER2_API_KEY = config("PROVIDER2_API_KEY")
-MODEL2 = config("MODEL2")
+PROVIDER2 = config("PROVIDER2", default="openai")
+PROVIDER2_API_KEY = config("PROVIDER2_API_KEY", default="test-key")
+MODEL2 = config("MODEL2", default="gpt-3.5-turbo")
 
 GUARDRAIL_MSG = "Tema inapropriado: %s"
 # disable linting for the next line
